@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basit Anket Uygulaması</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+	<body>
+		<div class="container">
+			<h1>Hangi dersleri seviyorsunuz?</h1>
+			<form id="survey-form">
+				<label for="name">Adınız:</label>
+				<input type="text" id="name" name="name" required>
+	
+				<label for="age">Yaşınız:</label>
+				<input type="number" id="age" name="age" required>
+	
+				<label for="course">Sevdiğiniz dersler:</label>
+				<select id="course" name="course" required>
+					<option value="">Lütfen bir ders seçin</option>
+					<option value="matematik">Matematik</option>
+					<option value="fizik">Fizik</option>
+					<option value="kimya">Kimya</option>
+					<option value="biyoloji">Biyoloji</option>
+				</select>
+	
+				<label for="feedback">Düşünceleriniz:</label>
+				<textarea id="feedback" name="feedback" required></textarea>
+	
+				<button type="submit">Gönder</button>
+			</form>
+	
+			<div id="results">
+				<h2>Anket sonuçları:</h2>
+				<p>Toplam katılımcı sayısı: <span id="total-participants"></span></p>
+				<ul id="survey-results"></ul>
+			</div>
+		</div>
+	
+		
+
+	<script src="script.js"></script>
+</body>
+</html>
